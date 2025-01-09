@@ -4,77 +4,13 @@
     <projectFile profileName="http">BlogWebAssembly/BlogWebAssembly.csproj</projectFile>
     <projectFile profileName="https">BlogWebAssembly/BlogWebAssembly.csproj</projectFile>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="37de8660-0b3e-4530-8007-d2dd37ba1411" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly.Client/BlogProjectWebAssembly.Client.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly.Client/Pages/Counter.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly.Client/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly.Client/_Imports.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly.Client/wwwroot/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly.Client/wwwroot/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/BlogProjectWebAssembly.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/Components/App.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/Components/Layout/MainLayout.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/Components/Layout/MainLayout.razor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/Components/Layout/NavMenu.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/Components/Layout/NavMenu.razor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/Components/Pages/Error.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/Components/Pages/Home.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/Components/Pages/Weather.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/Components/Routes.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/Components/_Imports.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogProjectWebAssembly/BlogProjectWebAssembly/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogWebAssembly/BlogWebAssembly.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BlogWebAssembly/BlogWebAssembly.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlogWebAssembly/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlogWebAssembly/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlogWebAssembly/wwwroot/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/BlogWebAssembly/wwwroot/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,26 +23,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2rMKSJTTaNytaHWDGZPYsujwIXq" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.BlogWebAssembly: http.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.BlogWebAssembly: http.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.BlogWebAssembly: http">
     <configuration name="BlogWebAssembly: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/BlogWebAssembly/BlogWebAssembly.csproj" />
@@ -148,13 +89,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1736363502720</updated>
-      <workItem from="1736363504156" duration="115000" />
+      <workItem from="1736363504156" duration="1821000" />
+      <workItem from="1736417311071" duration="631000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
