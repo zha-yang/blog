@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogWebAssembly", "BlogWebAssembly\BlogWebAssembly.csproj", "{E35BB1F0-B8B0-4D58-B4EE-2556E8B7DF8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{E5CE9E47-6482-4CD2-B249-58ED9E4132FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogPostProcessor", "BlogPostProcessor\BlogPostProcessor.csproj", "{9BC18828-84B0-4627-A8BD-7C920B5FB2D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{E35BB1F0-B8B0-4D58-B4EE-2556E8B7DF8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E35BB1F0-B8B0-4D58-B4EE-2556E8B7DF8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E35BB1F0-B8B0-4D58-B4EE-2556E8B7DF8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5CE9E47-6482-4CD2-B249-58ED9E4132FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5CE9E47-6482-4CD2-B249-58ED9E4132FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5CE9E47-6482-4CD2-B249-58ED9E4132FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5CE9E47-6482-4CD2-B249-58ED9E4132FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BC18828-84B0-4627-A8BD-7C920B5FB2D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BC18828-84B0-4627-A8BD-7C920B5FB2D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BC18828-84B0-4627-A8BD-7C920B5FB2D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BC18828-84B0-4627-A8BD-7C920B5FB2D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

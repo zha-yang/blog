@@ -17,6 +17,13 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: '9.0.x'  # Use your .NET version
+
+    - name: Run Blog Post Processor
+      run: |
+        if ! dotnet run --project BlogPostProcessor/BlogPostProcessor.csproj; then
+          echo "Blog post processing failed"
+          exit 1
+        fi
         
     - name: Publish .NET Core Project
       run: dotnet publish BlogWebAssembly.sln -c Release -o release --nologo
