@@ -10,20 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37de8660-0b3e-4530-8007-d2dd37ba1411" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BlogPostProcessor/BlogPostProcessor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlogPostProcessor/BlogProcessorSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlogPostProcessor/MarkdownBlogPost/BlogPost.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlogPostProcessor/MarkdownBlogPost/BlogPostMetadata.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlogPostProcessor/MarkdownBlogPost/MarkdownParser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlogPostProcessor/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlogPostProcessor/Utilities/BlogPostUtility.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlogPostProcessor/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/BlogPost.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Interfaces/IBlogService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/PostMetadata.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/Service/BlogService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data/Service/PublishDataComparer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlogWebAssembly/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlogWebAssembly/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlogWebAssembly.sln" beforeDir="false" afterPath="$PROJECT_DIR$/BlogWebAssembly.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/Service/BlogService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/Service/BlogService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,20 +36,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.BlogWebAssembly: http.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.BlogWebAssembly: http.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Properties",
+      "PLAIN_TEXT"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.BlogWebAssembly: https">
     <configuration name="BlogPostProcessor" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -130,7 +125,7 @@
       <workItem from="1736417311071" duration="1473000" />
       <workItem from="1736687903853" duration="5578000" />
       <workItem from="1736962596844" duration="2454000" />
-      <workItem from="1736965158310" duration="1018000" />
+      <workItem from="1736965158310" duration="3991000" />
     </task>
     <task id="LOCAL-00001" summary="adjust the base href in index.html">
       <option name="closed" value="true" />

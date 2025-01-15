@@ -6,72 +6,118 @@ namespace Data.Service;
 public class BlogService : IBlogService
 {
     private readonly HttpClient _http;
-    private Dictionary<string, BlogPost> _postCache = new();
-    private Dictionary<string, PostMetadata> _postMetadataMap = new();
+    private readonly Dictionary<string, BlogPost> _postCache = new();
+    private SortedDictionary<string, PostMetadata>? _postMetadataCache;
 
     public BlogService(HttpClient http)
     {
         _http = http;
+        _postMetadataCache = null;
     }
 
-    public async Task Initialize()
+    private async Task<SortedDictionary<string, PostMetadata>> GetPostMetadata()
     {
-        _postCache.Clear();
-        _postMetadataMap.Clear();
-        _postMetadataMap =
-            await _http.GetFromJsonAsync<Dictionary<string, PostMetadata>>("data/metadata/posts.json") ??
-            new Dictionary<string, PostMetadata>();
+        if (_postMetadataCache != null)
+        {
+            return _postMetadataCache;
+        }
+
+        var metadata = await _http.GetFromJsonAsync<Dictionary<string, PostMetadata>>("data/metadata/posts.json")
+                       ?? new Dictionary<string, PostMetadata>();
+
+        _postMetadataCache = new SortedDictionary<string, PostMetadata>(metadata, new PublishDateComparer(metadata));
+        return _postMetadataCache;
     }
 
     public async Task<List<BlogPost>> GetAllPostsAsync()
     {
+        var metadata = await GetPostMetadata();
         var posts = new List<BlogPost>();
-        foreach (var postId in _postMetadataMap.Keys)
+        foreach (var postId in metadata.Keys)
         {
-            if (!_postCache.TryGetValue(postId, out var value))
+            var post = await GetBlogPostAsync(postId);
+            if (post != null)
             {
-                value = await _http.GetFromJsonAsync<BlogPost>($"data/posts/{postId}.json");
-                if (value != null)
-                {
-                    _postCache[postId] = value;
-                }
-            }
-
-            if (value != null)
-            {
-                posts.Add(value);
+                posts.Add(post);
             }
         }
 
         return posts;
     }
 
-    public Task<int> GetBlogPostCountAsync()
+    public async Task<int> GetBlogPostCountAsync()
     {
-        throw new NotImplementedException();
+        var metadata = await GetPostMetadata();
+        return metadata.Count;
     }
 
-    public Task<List<BlogPost>> GetBlogPostsAsync(int numberOfPosts, int startIndex)
+    public async Task<List<BlogPost>> GetBlogPostsAsync(int numberOfPosts, int startIndex)
     {
-        throw new NotImplementedException();
-    }
-
-    public Task<BlogPost?> GetBlogPostAsync(string id)
-    {
-        throw new NotImplementedException();
-    }
-
-    private async Task<BlogPost?> GetPostAsync(string id)
-    {
-        if (!_postCache.TryGetValue(id, out BlogPost? value))
+        try
         {
-            value = await _http.GetFromJsonAsync<BlogPost>($"data/posts/{id}.json");
-            if (value != null)
+            var metadata = await GetPostMetadata();
+
+            var postIds = metadata.Keys
+                .Skip(startIndex)
+                .Take(numberOfPosts)
+                .ToList();
+
+            var postTasks = postIds.Select(GetBlogPostAsync);
+
+            var posts = await Task.WhenAll(postTasks);
+
+            return posts.Where(p => p != null).ToList();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex);
+            return [];
+        }
+    }
+
+    public async Task<BlogPost?> GetBlogPostAsync(string id)
+    {
+        try
+        {
+            var metadata = await GetPostMetadata();
+
+            if (!metadata.ContainsKey(id))
             {
-                _postCache[id] = value;
+                return null;
+            }
+
+            if (!_postCache.TryGetValue(id, out var postContent))
+            {
+                postContent = await _http.GetFromJsonAsync<BlogPost>($"data/posts/{id}.json");
+                if (postContent != null)
+                {
+                    _postCache[id] = postContent;
+                }
+            }
+
+            return postContent;
+        }
+        catch (HttpRequestException)
+        {
+            return null;
+        }
+    }
+
+    public async Task<List<BlogPost>> GetPostsByTags(IEnumerable<string> tags)
+    {
+        var metadata = await GetPostMetadata();
+        var matchingPosts = new List<BlogPost>();
+        var tagsSet = new HashSet<string>(tags);
+
+        foreach (var postMetadata in metadata.Where(post => post.Value.Tags.Any(tag => tagsSet.Contains(tag))))
+        {
+            var fullPost = await GetBlogPostAsync(postMetadata.Key);
+            if (fullPost != null)
+            {
+                matchingPosts.Add(fullPost);
             }
         }
 
-        return value;
+        return matchingPosts.OrderByDescending(p => p.Metadata.PublishDate).ToList();
     }
 }
