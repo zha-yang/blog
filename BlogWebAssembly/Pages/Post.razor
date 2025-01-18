@@ -1,0 +1,46 @@
+@page "/post/{BlogPostId}"
+
+@using Data
+@using Data.Interfaces
+@using Markdig
+
+@inject IBlogService _blogService
+@inject NavigationManager _navman
+
+@if (BlogPost != null)
+{
+    <PageTitle>@BlogPost.Metadata.Title</PageTitle>
+    <HeadContent>
+        <meta property="og:title"
+              content="@BlogPost.Metadata.Title"/>
+        <meta property="og:description"
+              content="@(new string(BlogPost.Content.Take(100).ToArray()))"/>
+        <meta property="og:url"
+              content="@_navman.Uri"/>
+    </HeadContent>
+
+    <h2>@BlogPost.Metadata.Title</h2>
+    @((MarkupString)Markdown.ToHtml(BlogPost.Content, _pipeline))
+}
+
+@code {
+    [Parameter] public string BlogPostId { get; set; }
+
+    public BlogPost? BlogPost { get; set; }
+    private MarkdownPipeline _pipeline;
+
+    protected override Task OnInitializedAsync()
+    {
+        _pipeline = new MarkdownPipelineBuilder()
+            .UseEmojiAndSmiley()
+            .Build();
+        return base.OnInitializedAsync();
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        BlogPost = await _blogService.GetBlogPostAsync(BlogPostId);
+        await base.OnParametersSetAsync();
+    }
+
+}

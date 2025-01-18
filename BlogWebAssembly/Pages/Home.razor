@@ -1,7 +1,43 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+@using Data.Interfaces
+@using Data
+@using Markdig;
+@inject IBlogService _blogService
 
-<h1>Hello, world!</h1>
+<ul>
+    <Virtualize ItemsProvider="LoadPosts" Context="p">
+        <article>
+            <h2>@p.Metadata.Title</h2>
+            @((MarkupString)Markdown.ToHtml(new string(p.Content.Take(100).ToArray()), _pipeline))
+            <a href="/Post/@p.Id">Read more</a>
+        </article>
+    </Virtualize>
+</ul>
 
-Welcome to your new app.
+@code {
+    public int totalBlogPosts { get; set; }
+    private MarkdownPipeline _pipeline;
+
+    protected override Task OnInitializedAsync()
+    {
+        _pipeline = new MarkdownPipelineBuilder()
+            .UseYamlFrontMatter()
+            .UseEmojiAndSmiley()
+            .Build();
+        return base.OnInitializedAsync();
+    }
+
+    private async ValueTask<ItemsProviderResult<BlogPost>> LoadPosts(ItemsProviderRequest request)
+    {
+        if (totalBlogPosts == 0)
+        {
+            totalBlogPosts = await _blogService.GetBlogPostCountAsync();
+        }
+
+        var numBlogPosts = Math.Min(request.Count, totalBlogPosts - request.StartIndex);
+        var blogPosts = await _blogService.GetBlogPostsAsync(numBlogPosts, request.StartIndex);
+        return new ItemsProviderResult<BlogPost>(blogPosts!, totalBlogPosts);
+    }
+
+}

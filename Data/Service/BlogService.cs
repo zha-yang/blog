@@ -88,7 +88,7 @@ public class BlogService : IBlogService
 
             if (!_postCache.TryGetValue(id, out var postContent))
             {
-                postContent = await _http.GetFromJsonAsync<BlogPost>($"data/posts/{id}.json");
+                postContent = await _http.GetFromJsonAsync<BlogPost>($"data/{id}.json");
                 if (postContent != null)
                 {
                     _postCache[id] = postContent;
