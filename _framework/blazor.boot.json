@@ -1,10 +1,10 @@
 {
   "mainAssemblyName": "BlogWebAssembly",
   "resources": {
-    "hash": "sha256-RW+6OEg4tteIkoq2Qj8nBH/znRXe9R8eoS5M/H2Zps8=",
+    "hash": "sha256-kQ9PCDrmPMCiursnk9WpqLguBPAuJCACLNpUFHhuqys=",
     "fingerprinting": {
-      "BlogWebAssembly.lwjl2ilil1.wasm": "BlogWebAssembly.wasm",
-      "Data.ltken96c4m.wasm": "Data.wasm",
+      "BlogWebAssembly.izl2dyxgy5.wasm": "BlogWebAssembly.wasm",
+      "Data.u9n1ocqleh.wasm": "Data.wasm",
       "Markdig.82zk74d1io.wasm": "Markdig.wasm",
       "Microsoft.AspNetCore.Components.bek58qppal.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.7xqa8kxvqg.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -68,8 +68,8 @@
       "System.Runtime.InteropServices.JavaScript.mwa725m7o8.wasm": "sha256-Cjdb0G7x7YHp1aN8K34JIjyB6iQIEsmMfoZJJ71ZuOw="
     },
     "assembly": {
-      "BlogWebAssembly.lwjl2ilil1.wasm": "sha256-BfL3rt33Qn9XRE0pBvQ6mnm9CaonGJlU8zPl1Yq1Zsc=",
-      "Data.ltken96c4m.wasm": "sha256-FwT3E2eS7E7PAgWaDCrWEUHuSgnhsRXXtYHCF9nBXHc=",
+      "BlogWebAssembly.izl2dyxgy5.wasm": "sha256-Mh+clSRaHjCqBzVwp2/OLsPKAyCls/0jSa3lrwptC+0=",
+      "Data.u9n1ocqleh.wasm": "sha256-EtTcRmFBS48qYx03nEo7RyPjHJGRECFCP+22sVnv+/E=",
       "Markdig.82zk74d1io.wasm": "sha256-gPUwGTHTe/sd4xmteeOSYd4a/J4deDy13pbwodSYfwc=",
       "Microsoft.AspNetCore.Components.bek58qppal.wasm": "sha256-fYkPqyBmlhD3p00BhovYC2X5/TrJ1iEtGHy+/FVZdGc=",
       "Microsoft.AspNetCore.Components.Web.7xqa8kxvqg.wasm": "sha256-NbHRVAsgcRm7hzaHnwtXkN5XNsUDXvGCeC5xGQcSaAU=",
