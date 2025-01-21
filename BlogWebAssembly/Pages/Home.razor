@@ -4,13 +4,14 @@
 @using Data
 @using Markdig;
 @inject IBlogService _blogService
+@inject NavigationManager _navigationManager
 
 <ul>
     <Virtualize ItemsProvider="LoadPosts" Context="p">
         <article>
             <h2>@p.Metadata.Title</h2>
             @((MarkupString)Markdown.ToHtml(new string(p.Content.Take(100).ToArray()), _pipeline))
-            <a href="/Post/@p.Id">Read more</a>
+            <a href="@_navigationManager.ToAbsoluteUri($"post/{p.Id}")">Read more</a>
         </article>
     </Virtualize>
 </ul>
