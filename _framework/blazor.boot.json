@@ -1,11 +1,11 @@
 {
   "mainAssemblyName": "BlogWebAssembly",
   "resources": {
-    "hash": "sha256-YR7zFHRfLFjQjXAQup1OI8UeIbWeQJdchBAn9DHjwXU=",
+    "hash": "sha256-ClKoNrRH4irx7zNKTf3O37VpN+/IzmwtgQIY6zSwjzw=",
     "fingerprinting": {
       "BlazorBootstrap.8ia4ukhb4c.wasm": "BlazorBootstrap.wasm",
-      "BlogWebAssembly.bce3j95d0a.wasm": "BlogWebAssembly.wasm",
-      "Data.8izwlax8g3.wasm": "Data.wasm",
+      "BlogWebAssembly.g8cm7kgg9d.wasm": "BlogWebAssembly.wasm",
+      "Data.tfrc5dl8vd.wasm": "Data.wasm",
       "Markdig.82zk74d1io.wasm": "Markdig.wasm",
       "Microsoft.AspNetCore.Components.Forms.p9q0rbt9cy.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
       "Microsoft.AspNetCore.Components.m8ixs46n34.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -81,8 +81,8 @@
     },
     "assembly": {
       "BlazorBootstrap.8ia4ukhb4c.wasm": "sha256-MIwpz+S9i8sZvkJIsjB5JXII2Y7wGr+D3glSOxjbeyw=",
-      "BlogWebAssembly.bce3j95d0a.wasm": "sha256-W7L1UQdB4gAh4LKJwzkkau3ERKw09au18pvlc5XVbAk=",
-      "Data.8izwlax8g3.wasm": "sha256-wCi7CPhCgOUX7q5SpqmkZxka4/3M8SnEBsb6npMDzRo=",
+      "BlogWebAssembly.g8cm7kgg9d.wasm": "sha256-kOGVS/QUvIWUmyDPkcryawaAND7SvPrvX289wm6MZlw=",
+      "Data.tfrc5dl8vd.wasm": "sha256-FyELJtjLhHmtdNYM8KeRFyt/QuE2Fd9nCEx/kG79Pnk=",
       "Markdig.82zk74d1io.wasm": "sha256-gPUwGTHTe/sd4xmteeOSYd4a/J4deDy13pbwodSYfwc=",
       "Microsoft.AspNetCore.Components.Forms.p9q0rbt9cy.wasm": "sha256-A2SN5aEUrTfexduG3/dDcIGyGvUAwKIAHlkZpCYONCg=",
       "Microsoft.AspNetCore.Components.m8ixs46n34.wasm": "sha256-libVCY0Nfj89wwcigDD82/zangeVCKl532tqM8v046g=",
